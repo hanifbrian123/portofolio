@@ -25,6 +25,22 @@
       justify-content: space-between;
       align-items: center;
     }
+    /* RESPONSIVE HERO */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero > div:first-child {
+        margin-right: 0 !important;
+      }
+
+      .hero img {
+        margin-top: 30px;
+        width: 160px;
+      }
+    }
     h1 {
       font-size: 48px;
       margin-bottom: 20px;
@@ -76,7 +92,7 @@
 </head>
 <body>
   <header>
-    <h2>Portofolio Hanif Brian</h2>
+    <h2><span style="color:orange;">Portofolio</span> Hanif Brian</h2>
     <nav>
       <a href="#projects" class="btn">Projects</a>
     </nav>
@@ -85,7 +101,7 @@
   <section class="hero">
     <div style="margin-right: 60px;">
       <h2>Halo</h2>
-      <p>Saya Hanif Brian. Mahasiswa Teknik Informatika dengan fokus pada pengembangan perangkat lunak dan rekayasa sistem. Berpengalaman membuat aplikasi berbasis web, berkompetisi, serta bekerja dalam tim proyek. Berkomitmen untuk belajar cepat dan berkontribusi dalam dunia kerja.</p>
+      <p>Saya Hanif Brian. Mahasiswa Teknik Informatika dengan minat pada pengembangan web dan rekayasa perangkat lunak. Berpengalaman mengembangkan aplikasi berbasis web menggunakan Laravel dan JavaScript, terbiasa bekerja dalam tim proyek, serta aktif mengikuti kompetisi. Memiliki kemampuan problem solving yang baik dan cepat beradaptasi dengan teknologi baru.</p>
       <br />
       <a href="#contact" class="btn">Contact & Links</a>
     </div>
@@ -143,9 +159,12 @@
 
   <section id="contact" style="padding:60px 10%;">
     <h2>Contact & Links</h2>
-    <p><strong>CV:</strong> <a href="#" style="color:orange;">Link CV</a></p>
+    <p><strong>CV:</strong> <a href="https://drive.google.com/file/d/1rS4l07Om-AIWoPbXhkC2KpAIf86533eT/view?usp=sharing" style="color:orange;">Link CV</a></p>
+    <p><strong>Portfolio:</strong> <a href="https://hanifbrian123.github.io/portofolio/" style="color:orange;">hanifbrian123.github.io/portofolio</a></p>
     <p><strong>GitHub:</strong> <a href="https://github.com/hanifbrian123" style="color:orange;">github.com/hanifbrian123</a></p>
-    <p><strong>LinkedIn:</strong> <a href="#" style="color:orange;">LinkedIn Profile</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hanifbrian/" style="color:orange;">linkedin.com/in/hanifbrian</a></p>
+    <p><strong>Telepon (WA):</strong> <a href="https://wa.me/6289512502908" style="color:orange;">089512502908</a></p>
+    <p><strong></strong>Email:</strong> <a href="mailto:brianhanif12345@gmail.com" style="color:orange;">brianhanif12345@gmail.com</a></p>
   </section>
 
   <footer>
