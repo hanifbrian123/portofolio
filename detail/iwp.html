@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IWP – Detail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; background:#000; color:#ddd; font-family:'Inter',sans-serif; line-height:1.55; }
+    .container { width:85%; margin:auto; padding:50px 0; }
+    h1 { font-size:32px; color:orange; margin-bottom:10px; }
+    h2 { font-size:20px; color:#fff; margin-top:40px; }
+    p { font-size:15px; color:#ccc; }
+    a { color:orange; text-decoration:none; }
+
+    .btns { margin:20px 0; display:flex; gap:12px; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:8px; background:#1d1d1f; border:1px solid #333; color:#fff; font-size:14px; font-weight:500; text-decoration:none; transition:0.2s ease; }
+    .btn:hover { background:#2a2a2c; border-color:#444; }
+    .btn svg { width:16px; height:16px; }
+
+    /* SLIDESHOW */
+    .slideshow { position:relative; width:100%; max-width:900px; margin:auto; overflow:hidden; border-radius:12px; }
+    .slides { display:flex; transition:transform 0.5s ease; }
+    .slides img { width:100%; border-radius:12px; }
+
+    /* SIDE CLICK AREA — FIXED, FULL HEIGHT, ALWAYS ABOVE SLIDES */
+    .side-btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0);
+      transition: 0.2s;
+      z-index: 9999; /* SUPER HIGH SO IT NEVER GETS HIDDEN */
+      pointer-events: auto;
+    }
+
+    .side-btn:hover {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .side-btn span {
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.158);
+      font-weight: bold;
+    }
+
+    .left-btn { left: 0; }
+    .right-btn { right: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" style="color:orange;">← Back</a>
+
+    <h1>IWP – Indo Waroeng Prasmanan</h1>
+
+    <div class="btns">
+      <a class="btn" href="https://23-060.github.io/iwp" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-6m6 0v6"/></svg>
+        Live Demo
+      </a>
+      <a class="btn" href="https://github.com/23-060/iwp" target="_blank">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.63 7.63 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        Github
+      </a>
+    </div>
+
+
+    <h2>Deskripsi</h2>
+    <p>Front-end website untuk restoran yang berisikan informasi, promosi, beserta reservasi restoran. Finalis Top 10 Web Competition Teknovistafest HIMTI
+UNAIR 2023. </p>
+
+
+    <!-- SLIDESHOW WRAPPER -->
+    <h2>Preview</h2>
+    <div class="slideshow">
+      <div class="side-btn left-btn" onclick="plusSlides(-1)"><span>&lt;</span></div>
+      <div class="side-btn right-btn" onclick="plusSlides(1)"><span>&gt;</span></div>
+
+      <div class="slides">
+        <img src="../Images/iwp/Screenshot 2025-12-24 122200.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122208.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122230.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122248.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122318.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122336.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122359.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122431.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122442.png" />
+        <img src="../Images/iwp/Screenshot 2025-12-24 122513.png" />
+      </div>
+    </div>
+
+    <div class="slide-nav" style="display:none;">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelector('.slides');
+    const total = slides.children.length;
+
+    function currentSlide(i) {
+      index = i;
+      slides.style.transform = `translateX(-${i * 100}%)`;
+    }
+
+    function plusSlides(n) {
+      index += n;
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      currentSlide(index);
+    }
+  </script>
+</body>
+</html>

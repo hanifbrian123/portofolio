@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 40px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hero {
+      padding: 80px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: orange;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+    .projects {
+      padding: 60px 10%;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+    .project-card .info {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    a { color: #fff; text-decoration: none; }
+  .project-card h3 { color: #fff; }
+  .project-card p { color: #ccc; }
+</style>
+</head>
+<body>
+  <header>
+    <h2>Portofolio Hanif Brian</h2>
+    <nav>
+      <a href="#projects" class="btn">Projects</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div style="margin-right: 60px;">
+      <h2>Halo</h2>
+      <p>Saya Hanif Brian. Mahasiswa Teknik Informatika dengan fokus pada pengembangan perangkat lunak dan rekayasa sistem. Berpengalaman membuat aplikasi berbasis web, berkompetisi, serta bekerja dalam tim proyek. Berkomitmen untuk belajar cepat dan berkontribusi dalam dunia kerja.</p>
+      <br />
+      <a href="#contact" class="btn">Contact & Links</a>
+    </div>
+    <div>
+      <img width="200" src="./Images/foto.jpeg" alt="Hero Illustration" />
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <a class="project-card" href="./detail/task-management.html">
+        <img src="Images/task-management/dashboard-utama.png" />
+        <div class="info">
+          <h3>Task Management App</h3>
+          <p>Aplikasi task management dengan fitur kategori, prioritas, subtask, search, sorting, dan drag & drop ...</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="./detail/iwp.html">
+        <img src="Images/iwp/Screenshot 2025-12-24 122200.png" />
+        <div class="info">
+          <h3>IWP – Indo Waroeng Prasmanan</h3>
+          <p>Front-end website restoran berisi informasi, promosi, serta fitur reservasi ...</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="./detail/modis.html">
+        <img src="Images/modis/daftar-pelanggaran.png" />
+        <div class="info">
+          <h3>Modis – Monitoring Pelanggaran</h3>
+          <p>Platform manajemen pelanggaran dan layanan konseling untuk siswa, guru BK, dan admin ...</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="./detail/macahyuk.html">
+        <img src="Images/macahyuk/Screenshot 2025-12-25 084016.png" />
+        <div class="info">
+          <h3>MacaHyuK – Digital Library</h3>
+          <p>Aplikasi web perpustakaan digital dengan fitur peminjaman, pengelolaan koleksi, dan dashboard admin ...</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="./detail/waracademy.html">
+        <img src="Images/waracademy/Screenshot 2025-12-24 142156.png" />
+        <div class="info">
+          <h3>Waracademy – Educational Game</h3>
+          <p>Game edukatif berbasis web dengan kuis, EXP, bintang, dan level yang terstruktur ...</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="contact" style="padding:60px 10%;">
+    <h2>Contact & Links</h2>
+    <p><strong>CV:</strong> <a href="#" style="color:orange;">Link CV</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/hanifbrian123" style="color:orange;">github.com/hanifbrian123</a></p>
+    <p><strong>LinkedIn:</strong> <a href="#" style="color:orange;">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    © 2025 Hanif Brian Gyimnastiar — All rights reserved.
+  </footer>
+</body>
+</html>

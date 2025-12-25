@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Management App – Detail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #ddd;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.55;
+    }
+    .container { width: 85%; margin: auto; padding: 50px 0; }
+    h1 { font-size: 32px; color: orange; margin-bottom: 10px; }
+    h2 { font-size: 20px; color: #fff; margin-top: 40px; }
+    p { font-size: 15px; color: #ccc; }
+    img { width: 100%; border-radius: 10px; }
+    a { color: orange; text-decoration: none; }
+
+    .btns {
+      margin: 20px 0;
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: #1d1d1f;
+      border: 1px solid #333;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #2a2a2c;
+      border-color: #444;
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 20px;
+      align-items: start;
+    }
+
+    ul li { margin-bottom: 6px; font-size: 14px; }
+    .section-block { margin-bottom: 70px; }
+    /* RESPONSIVE LAYOUT UNTUK BAGIAN 2 KOLOM */
+    @media (max-width: 900px) {
+      .two-col {
+        grid-template-columns: 1fr;   /* jadi 1 kolom */
+        gap: 25px;
+      }
+
+      .two-col img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" style="color:orange;">← Back</a>
+
+    <h1>Task Management App</h1>
+
+    <div class="btns">
+      <!-- <a class="btn" href="#" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-6m6 0v6" />
+        </svg>
+        Live Demo
+      </a> -->
+
+      <a class="btn" href="https://github.com/hanifbrian123/task-management-app" target="_blank">
+        <svg viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.63 7.63 0 012-.27c.68 0 1.36.09
+            2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+            0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19
+            0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        Github
+      </a>
+    </div>
+
+
+    <!-- DESKRIPSI -->
+    <div class="section-block">
+      <h2>Deskripsi</h2>
+      <p>Aplikasi Task Management ini dirancang untuk membantu pengguna mengatur aktivitas secara lebih terstruktur dan efisien. Dengan antarmuka yang bersih dan intuitif, pengguna dapat membuat, mengedit, mengelompokkan, serta mengurutkan task dengan mudah. Sistem ini dilengkapi fitur kategori, prioritas, subtask, pencarian, pengurutan cerdas, dan kemampuan drag-and-drop untuk memindahkan task sesuai kebutuhan.</p>
+      <p>Aplikasi juga menyediakan halaman khusus untuk melihat semua task yang telah diselesaikan, lengkap dengan pengelompokan berdasarkan tanggal selesai. Selain itu, terdapat tampilan kalender interaktif yang memungkinkan pengguna melihat task berdasarkan tanggal dan menyunting task dengan cepat dari panel samping.</p>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="section-block">
+      <h2>Halaman Dashboard</h2>
+
+      <div class="two-col">
+        <div>
+          <img src="../Images/task-management/dashboard-utama.png" alt="Dashboard" />
+        </div>
+
+        <div>
+          <ul>
+            <li><strong>Task Management Panel:</strong> Daftar task rapi lengkap dengan checkbox dan priority bubble.</li>
+            <li><strong>Edit Task Panel:</strong> Menampilkan detail task aktif.</li>
+            <li><strong>Priority System:</strong> Indikator prioritas 1–5.</li>
+            <li><strong>Category Filter:</strong> Memfilter task berdasarkan kategori.</li>
+            <li><strong>Manual Sorting:</strong> Drag & drop mode.</li>
+            <li><strong>Subtask Manager:</strong> Tambah/edit/hapus subtask.</li>
+            <li><strong>Search Tasks:</strong> Pencarian real-time.</li>
+            <li><strong>Manage Categories:</strong> Modal CRUD kategori.</li>
+            <li><strong>Sort Options:</strong> Berdasarkan due date, creation date, atau manual.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPLETED TASKS -->
+    <div class="section-block">
+      <h2>Halaman Completed Tasks</h2>
+      <div class="two-col">
+        <div>
+          <img src="../Images/task-management/completed-task-view.png" alt="Completed Tasks" />
+        </div>
+
+        <div>
+          <ul>
+            <li><strong>Riwayat Tugas Selesai:</strong> Tampilan rapi dan minimalis.</li>
+            <li><strong>Grouping Tanggal:</strong> Otomatis berdasarkan completed date.</li>
+            <li><strong>Uncheck to Restore:</strong> Mengembalikan status task.</li>
+            <li><strong>Clean UI:</strong> Warna lembut membedakan dari task aktif.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div class="section-block">
+      <h2>Halaman Calendar</h2>
+      <div class="two-col">
+        <div>
+          <img src="../Images/task-management/calendar-view.png" alt="Calendar View" />
+        </div>
+
+        <div>
+          <ul>
+            <li><strong>Interactive Calendar:</strong> Navigasi bulan dan hari.</li>
+            <li><strong>Dot Indicators:</strong> Penanda tanggal yang memiliki task.</li>
+            <li><strong>Day-Based Task Listing:</strong> Klik tanggal → tampilkan task.</li>
+            <li><strong>Edit Task Panel:</strong> Panel kanan menjadi editor task.</li>
+            <li><strong>Component Reuse:</strong> UI konsisten antar halaman.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

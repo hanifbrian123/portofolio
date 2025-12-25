@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MacaHyuK – Detail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; background:#000; color:#ddd; font-family:'Inter',sans-serif; line-height:1.55; }
+    .container { width:85%; margin:auto; padding:50px 0; }
+    h1 { font-size:32px; color:orange; margin-bottom:10px; }
+    h2 { font-size:20px; color:#fff; margin-top:40px; }
+    p { font-size:15px; color:#ccc; }
+    a { color:orange; text-decoration:none; }
+
+    /* SLIDESHOW */
+    .slideshow { position:relative; width:100%; max-width:900px; margin:auto; overflow:hidden; border-radius:12px; }
+    .slides { display:flex; transition:transform .5s ease; pointer-events:none; }
+    .slides img { width:100%; border-radius:12px; }
+
+    .side-btn { position:absolute; top:0; bottom:0; width:60px; display:flex; align-items:center; justify-content:center; cursor:pointer; background:rgba(0,0,0,0.1); transition:.2s; z-index:9999; }
+    .side-btn:hover { background:rgba(0,0,0,0.25); }
+    .side-btn span { font-size:32px; color:white; font-weight:bold; }
+    .left-btn { left:0; }
+    .right-btn { right:0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html">← Back</a>
+
+    <h1>MacaHyuK – Digital Library</h1>
+
+    <h2>Deskripsi</h2>
+    <p><strong>MacaHyuK</strong> adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk mengakses koleksi buku, melakukan peminjaman, serta mengelola data perpustakaan melalui peran User dan Admin. Aplikasi ini dikembangkan menggunakan <strong>PHP</strong> dan <strong>MySQL</strong>.</p>
+
+    <h2>Preview</h2>
+    <div class="slideshow">
+      <div class="side-btn left-btn" onclick="plusSlides(-1)"><span>&lt;</span></div>
+      <div class="side-btn right-btn" onclick="plusSlides(1)"><span>&gt;</span></div>
+
+      <div class="slides">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084016.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083956.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084004.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084032.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084047.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084105.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084120.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084148.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 084159.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083748.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083758.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083804.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083822.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083832.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083838.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083844.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083849.png">
+        <img src="../Images/macahyuk/Screenshot 2025-12-25 083908.png">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelector('.slides');
+    const total = slides.children.length;
+
+    function show(i) {
+      slides.style.transform = `translateX(-${i * 100}%)`;
+    }
+
+    function plusSlides(n) {
+      index += n;
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      show(index);
+    }
+  </script>
+</body>
+</html>
